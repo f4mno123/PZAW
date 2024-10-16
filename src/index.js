@@ -6,12 +6,14 @@ import App from './App';
 import Sci from './Sci';
 import NewComponent from './NewComponent';
 import Form from './Form';
+import MyOwnTable from './MyOwnTable';
 // import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Form/>
+    {/* <Form/> */}
+    <MyOwnTable/>
   </React.StrictMode>
 );
 
