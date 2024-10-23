@@ -7,13 +7,16 @@ import Sci from './Sci';
 import NewComponent from './NewComponent';
 import Form from './Form';
 import MyOwnTable from './MyOwnTable';
+import ComponentToDisplay from './Task1/ComponentToDisplay';
 // import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+
+
 root.render(
   <React.StrictMode>
-    {/* <Form/> */}
-    <MyOwnTable/>
+    <App />
   </React.StrictMode>
 );
 
