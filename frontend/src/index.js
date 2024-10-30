@@ -9,6 +9,7 @@ import Form from './Form';
 import MyOwnTable from './MyOwnTable';
 import ComponentToDisplay from './Task1/ComponentToDisplay';
 // import reportWebVitals from './reportWebVitals';
+import AxiosExample from './AxiosExample';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -16,7 +17,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
   <React.StrictMode>
-    <App />
+    <AxiosExample/>
   </React.StrictMode>
 );
 
