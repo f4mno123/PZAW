@@ -5,11 +5,12 @@ import './index.css';
 import App from './App';
 import Sci from './Sci';
 import NewComponent from './NewComponent';
-import Form from './Form';
+
 import MyOwnTable from './MyOwnTable';
 import ComponentToDisplay from './Task1/ComponentToDisplay';
 // import reportWebVitals from './reportWebVitals';
 import AxiosExample from './AxiosExample';
+import Form from './Task18november/Form';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -17,8 +18,8 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
   <React.StrictMode>
-    <AxiosExample/>
-  </React.StrictMode>
+    <Form/>
+      </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function

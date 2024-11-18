@@ -4,6 +4,11 @@ const bodyParser = require('body-parser');
 const app = express();
 
 app.use(cors());
+app.use(bodyParser.json());
+
+let globalData = []
+
+
 
 const router = express.Router();
 router.get('/gettest', (req, res) => {
@@ -28,6 +33,18 @@ router.get('/json', (req, res) => {
   };
   res.status(200);
   res.json(data);
+});
+
+
+router.post('/task02/data', (req, res) => {
+  const { name, surname, age, gender, gay } = req.body;
+  globalData.push({name,surname,age,gender,gay})
+  console.log(`Name: ${name}, Surname: ${surname}, Age: ${age}, Gender: ${gender}, Gay: ${gay}`);
+  res.send('Form data received');
+});
+
+router.get('/task02/data', (req, res) => {
+  res.status(200).json(globalData);
 });
 
 app.use(router);
