@@ -2,15 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
-import App from './App';
-import Sci from './Sci';
-import NewComponent from './NewComponent';
-
-import MyOwnTable from './MyOwnTable';
-import ComponentToDisplay from './Task1/ComponentToDisplay';
-// import reportWebVitals from './reportWebVitals';
-import AxiosExample from './AxiosExample';
-import Form from './Task18november/Form';
+import PokettoKomponento from './Pokedex/PokettoKomponento';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -18,7 +10,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
   <React.StrictMode>
-    <Form/>
+    <PokettoKomponento />
       </React.StrictMode>
 );
 
